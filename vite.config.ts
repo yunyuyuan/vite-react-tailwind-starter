@@ -16,7 +16,6 @@ export default defineConfig({
   build: {
     rollupOptions: {
       plugins: [{
-        // dynamic svg load, just for rollup building
         name: "raw-svg-file-loader",
         transform (_: string, filepath: string) {
           if (filepath.includes("node_modules")) {
